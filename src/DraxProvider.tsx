@@ -3,7 +3,7 @@ import React, {
 	ReactNodeArray,
 	useRef,
 } from 'react';
-import { View, StyleSheet, findNodeHandle } from 'react-native';
+import { View, StyleSheet } from 'react-native';
 import { State } from 'react-native-gesture-handler';
 
 import { useDraxState, useDraxRegistry } from './hooks';
@@ -771,7 +771,7 @@ export const DraxProvider = ({
 
 	const setRootNodeHandleRef = useCallback(
 		(ref: View | null) => {
-			rootNodeHandleRef.current = ref && findNodeHandle(ref);
+			rootNodeHandleRef.current = ref
 		},
 		[],
 	);

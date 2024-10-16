@@ -10,7 +10,6 @@ import {
 	Animated,
 	View,
 	StyleSheet,
-	findNodeHandle,
 	Dimensions,
 	ViewStyle,
 	StyleProp,
@@ -596,7 +595,7 @@ export const DraxView = (
 	const setViewRefs = useCallback(
 		(ref: View | null) => {
 			viewRef.current = ref;
-			nodeHandleRef.current = ref && findNodeHandle(ref);
+			nodeHandleRef.current = ref
 		},
 		[],
 	);
