@@ -10,7 +10,6 @@ import {
 	ScrollView,
 	NativeSyntheticEvent,
 	NativeScrollEvent,
-	findNodeHandle,
 } from 'react-native';
 
 import { DraxView } from './DraxView';
@@ -215,7 +214,7 @@ const DraxScrollViewUnforwarded = (
 	const setScrollViewRefs = useCallback(
 		(ref: ScrollView | null) => {
 			scrollRef.current = ref;
-			nodeHandleRef.current = ref && findNodeHandle(ref);
+			nodeHandleRef.current = ref
 			if (forwardedRef) {
 				if (typeof forwardedRef === 'function') {
 					forwardedRef(ref);

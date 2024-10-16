@@ -16,8 +16,8 @@ import {
 	NativeSyntheticEvent,
 	FlatList,
 	Animated,
-	findNodeHandle,
 	StyleSheet,
+	View,
 } from 'react-native';
 
 import { DraxView } from './DraxView';
@@ -289,11 +289,16 @@ const DraxListUnforwarded = <T extends unknown>(
 		[],
 	);
 
+
+	const setViewRefs = useCallback((ref)=>{
+		nodeHandleRef.current = ref
+	},[])
+
+
 	// Set FlatList and node handle refs.
 	const setFlatListRefs = useCallback(
 		(ref) => {
 			flatListRef.current = ref;
-			nodeHandleRef.current = ref && findNodeHandle(ref);
 			if (forwardedRef) {
 				if (typeof forwardedRef === 'function') {
 					forwardedRef(ref);
@@ -690,15 +695,17 @@ const DraxListUnforwarded = <T extends unknown>(
 			onMonitorDragDrop={onMonitorDragDrop}
 		>
 			<DraxSubprovider parent={{ id, nodeHandleRef }}>
-				<FlatList
-					{...flatListProps}
-					style={flatListStyle}
-					ref={setFlatListRefs}
-					renderItem={renderItem}
-					onScroll={onScroll}
-					onContentSizeChange={onContentSizeChange}
-					data={reorderedData}
-				/>
+				<View ref={setViewRefs}>
+					<FlatList
+						{...flatListProps}
+						style={flatListStyle}
+						ref={setFlatListRefs}
+						renderItem={renderItem}
+						onScroll={onScroll}
+						onContentSizeChange={onContentSizeChange}
+						data={reorderedData}
+					/>
+				</View>
 			</DraxSubprovider>
 		</DraxView>
 	);
