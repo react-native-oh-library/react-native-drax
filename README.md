@@ -1,6 +1,6 @@
-# @react-native-oh-tpl/react-native-drax
+# @react-native-ohos/react-native-drax
 
-This project is based on [react-native-drax](https://github.com/nuclearpasta/react-native-drax)
+This project is based on [react-native-drax@0.11.0](https://github.com/nuclearpasta/react-native-drax/tree/main)
 
 ## Documentation URL
 

@@ -1,0 +1,11 @@
+[
+    {
+        "Name": "react-native-drax",
+        "License": "MIT License",
+        "License File": "https://github.com/nuclearpasta/react-native-drax/blob/main/LICENSE.md",
+        "Version Number": "0.11.0",
+        "Owner" : "xiafeng@huawei.com",
+        "Upstream URL": "https://github.com/nuclearpasta/react-native-drax",
+        "Description": "A <Modal/> component for react-native"
+    }
+]
