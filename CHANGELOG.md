@@ -9,6 +9,8 @@ Changes marked as (BREAKING) may break your app logic. Changes marked as (BREAKI
 ## [Unreleased]
 - Nothing yet
 
+## [0.11.1-rc.1] - 2025-11-03
+- pre-release version 0.11.1-rc.1
 
 ## [0.10.3] - 2022-09-06
 
