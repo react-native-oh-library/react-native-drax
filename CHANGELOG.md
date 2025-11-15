@@ -10,7 +10,24 @@ Changes marked as (BREAKING) may break your app logic. Changes marked as (BREAKI
 - Nothing yet
 
 ## [0.11.1-rc.1] - 2025-11-03
-- pre-release version 0.11.1-rc.1
+
+- 修改组织名为 @react-native-ohos
+
+## [0.11.0] - 2025-09-15
+
+### Removed
+
+- 移除 monitorStyle 属性​：不再使用该属性为 DraxList 设置监控样式
+
+### Added
+
+- 新增 monitoringExternalDragStyle 属性​：用于在外部拖拽项悬停时自定义 DraxList 容器样式
+- ​新增 DraxListItem 组件​：一个封装了 DraxView 的便捷组件，用于在列表中渲染可拖拽项
+
+### Changed
+
+- 统一渲染接口​：用单一的 renderItem 回调函数取代原有的 renderItemContent 和 renderHoverContent 属性，简化列表项渲染逻辑
+- 调整样式作用域​：style 属性现在用于控制内部的 FlatList，parentDraxViewProps.style 用于控制最外层容器样式
 
 ## [0.10.3] - 2022-09-06
 
