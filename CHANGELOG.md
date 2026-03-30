@@ -9,6 +9,10 @@ Changes marked as (BREAKING) may break your app logic. Changes marked as (BREAKI
 ## [Unreleased]
 - Nothing yet
 
+## [0.11.1] - 2026-03-30
+
+- release:@react-native-ohos/react-native-drax@0.11.1
+
 ## [0.11.1-rc.1] - 2025-11-03
 
 - 修改组织名为 @react-native-ohos
