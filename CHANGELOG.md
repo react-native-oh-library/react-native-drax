@@ -9,6 +9,11 @@ Changes marked as (BREAKING) may break your app logic. Changes marked as (BREAKI
 ## [Unreleased]
 - Nothing yet
 
+## [0.12.0-rc.1] - 2026-05-30
+
+- 添加get set方法 解决因为 react-native-reanimated 引起的编译问题
+- pre-release:@react-native-ohos/react-native-drax@0.12.0-rc.1
+
 ## [0.11.1] - 2026-03-30
 
 - release:@react-native-ohos/react-native-drax@0.11.1
