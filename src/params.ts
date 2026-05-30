@@ -30,4 +30,10 @@ export const INITIAL_REANIMATED_POSITION = {
     addListener(): void {},
     removeListener(): void {},
     modify(): void {},
+    get(): { x: number; y: number } {
+        return this.value;
+    },
+    set(value: { x: number; y: number }): void {
+        this.value = value;
+    },
 };
