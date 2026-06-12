@@ -4,9 +4,9 @@ This project is based on [react-native-drax@0.11.0](https://github.com/nuclearpa
 
 ## Documentation URL
 
-- [中文 ](https://gitee.com/react-native-oh-library/usage-docs/blob/master/zh-cn/react-native-drax.md)
+- [中文 ](https://gitcode.com/CPF-RN/usage-docs/blob/master/zh-cn/react-native-drax.md)
 
-- [英文 ](https://gitee.com/react-native-oh-library/usage-docs/blob/master/en/react-native-drax.md)
+- [英文 ](https://gitcode.com/CPF-RN/usage-docs/blob/master/en/react-native-drax.md)
 
 ## License
 

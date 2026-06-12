@@ -1,6 +1,6 @@
 {
   "name": "@react-native-ohos/react-native-drax",
-  "version": "0.12.0-rc.1",
+  "version": "0.12.0",
   "description": "A drag-and-drop system for React Native",
   "repository": {
     "type": "git",
